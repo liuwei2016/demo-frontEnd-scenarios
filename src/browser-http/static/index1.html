@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        img {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<script>
+    for (let i = 1; i <= 40; i++) {
+        const imgEl = document.createElement('img')
+
+        if (location.host === 'localhost:3005') {
+            imgEl.src = `http://localhost:3005/img2/${i}.png`
+        } else {
+            imgEl.src = `http://113.31.106.69:3005/img2/${i}.png`
+        }
+        document.body.appendChild(imgEl)
+    }
+</script>
+
+<script src="/jquery-3.x.js"></script>
+
+
+</html>

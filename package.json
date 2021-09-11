@@ -1,0 +1,37 @@
+{
+  "name": "browser-cache",
+  "version": "1.0.0",
+  "description": "a koa2 server to display  HTTP  & browser cache & cors demo",
+  "main": "src/index.js",
+  "author": "liuwei2016",
+  "license": "MIT",
+  "scripts": {
+    "http": "cross-env NODE_ENV=development nodemon src/browser-http/net.js",
+    "http1.1": "cross-env NODE_ENV=development nodemon src/browser-http/http1.1.js",
+    "http2.0": "cross-env NODE_ENV=development nodemon src/browser-http/http2.0.js",
+    "httpCache": "cross-env NODE_ENV=development nodemon src/browser-http/cache.js",
+    "httpCors": "cross-env NODE_ENV=development nodemon src/browser-http/cors.js",
+    "long-polling": "cross-env NODE_ENV=development nodemon src/browser-http/long-polling.js",
+    "sse": "cross-env NODE_ENV=development nodemon src/browser-http/sse2.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "chalk": "^2.4.2",
+    "cross-env": "^5.2.0",
+    "fs-extra": "^8.0.1",
+    "http2": "^3.3.7",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "mime": "^2.4.4",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
