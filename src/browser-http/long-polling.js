@@ -15,7 +15,7 @@ function delay(ms) { //超时
     });
 }
 
-function getRel(ms) { //设置一个 保持时间
+function getRel(ms) { //设置一个 保持时间 
     return new Promise((resolve) => {
         let time = new Date();
         let it = setInterval(() => {
@@ -27,7 +27,7 @@ function getRel(ms) { //设置一个 保持时间
     });
 }
 
-const port = 3000;
+const port = 3012;
 
 app.listen(port, (err) => {
     if (err) {

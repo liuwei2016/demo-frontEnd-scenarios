@@ -9,6 +9,7 @@
     "http": "cross-env NODE_ENV=development nodemon src/browser-http/net.js",
     "http1.1": "cross-env NODE_ENV=development nodemon src/browser-http/http1.1.js",
     "http2.0": "cross-env NODE_ENV=development nodemon src/browser-http/http2.0.js",
+    "httpCache1": "cross-env NODE_ENV=development nodemon src/browser-http/http1.1.js",
     "httpCache": "cross-env NODE_ENV=development nodemon src/browser-http/cache.js",
     "httpCors": "cross-env NODE_ENV=development nodemon src/browser-http/cors.js",
     "long-polling": "cross-env NODE_ENV=development nodemon src/browser-http/long-polling.js",

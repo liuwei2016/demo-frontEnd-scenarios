@@ -37,6 +37,7 @@ app.use(async (ctx, next) => {
 
     stream.on("close", () => {
         events.off("data", listener);
+        console.log("222")
     });
 });
 app.use((ctx) => {

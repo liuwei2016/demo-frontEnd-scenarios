@@ -14,7 +14,7 @@ app.use(
                 return "*"; // 允许来自所有域名请求
             }
             if (ctx.url === "/test2") {
-                return "http://localhost:8083"; // 允许来自所有域名请求
+                return "http://localhost:8080"; // 允许来自所有域名请求
             }
             return "http://dev.djtest.cn"; // 只允许http://localhost:8080这个域名的请求
         },

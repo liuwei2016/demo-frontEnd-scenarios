@@ -44,7 +44,7 @@ app.use(templating('views', {
 // add controller middleware:
 app.use(controller());
 
-let server = app.listen(3000);
+let server = app.listen(3013);
 
 function parseUser(obj) {
     if (!obj) {
@@ -152,4 +152,4 @@ function onClose() {
 
 app.wss = createWebSocketServer(server, onConnect, onMessage, onClose);
 
-console.log('app started at port 3000...');
+console.log('app started at port 3013...');

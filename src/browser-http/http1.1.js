@@ -7,8 +7,8 @@ const static = require('koa-static');
 const app = new Koa();
 const compress = require('koa-compress');
 // 配置静态web服务的中间件
-const staticPath =path.join( __dirname, './static');
-app.use(static( staticPath,{maxage:10000000}));
+// const staticPath =path.join( __dirname, './static');
+// app.use(static( staticPath,{maxage:0}));
  
 app.use(compress({
   filter (content_type) {
@@ -27,10 +27,14 @@ app.use(compress({
 
 app.use(ctx => {
   ctx.type = 'html';
-  ctx.body = fs.createReadStream('./static/index1.html');
+  console.log('333')
+  ctx.body = fs.createReadStream('./test/indexOne.html');
+  
 })
+
+// console.log(fs.createReadStream('./test/indexOne.html'))
+//  http://113.31.106.69:3005/ 
  
- 
-app.listen(3005, (err) => {
-  console.log(`http Server listening on 3005`)
+app.listen(3050, (err) => {
+  console.log(`http Server  listening on 3050`)
 })
